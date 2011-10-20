@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.snancekivell.Bike_Pics_Wallpaper.test"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+
+    <uses-library android:name="android.test.runner" />
+    </application>
+    <uses-sdk android:minSdkVersion="5" />
+    <uses-permission android:name="android.permission.DEVICE_POWER"></uses-permission>
+    <instrumentation android:targetPackage="org.snancekivell.Bike_Pics_Wallpaper"
+    		android:label="Test project suite: BPW"
+    		android:name="android.test.InstrumentationTestRunner" />
+</manifest> 
