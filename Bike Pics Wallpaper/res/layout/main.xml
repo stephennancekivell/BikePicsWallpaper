@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<RelativeLayout
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+    <TextView android:text="Set the photo of the day from bikepics.com as your wallpaper"
+    		  android:layout_width="wrap_content"
+    		  android:layout_height="wrap_content"
+    		  android:layout_alignParentTop="true"
+    		  android:layout_centerHorizontal="true"
+    		  android:layout_margin="3px"
+    		  android:id="@+id/m_text"/>
+	<ProgressBar
+			android:id="@+id/m_progress"
+			android:layout_width="150px"
+			android:layout_height="150px"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/m_text" />
+    <ImageView
+			android:id="@+id/m_preview_image"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/m_progress" />
+ 	<Button	android:text="Set Wallpaper"
+			android:id="@+id/m_set_wallpaper"
+			android:layout_width="180px"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/m_preview_image"
+    		android:layout_centerHorizontal="true"/>
+    <CheckBox android:id="@+id/m_change_periodic_checkbox"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Auto update" 
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/m_set_wallpaper"/>
+	<Button	android:text="Rate app/Feedback"
+			android:id="@+id/m_rate"
+			android:layout_width="180px"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/m_change_periodic_checkbox" />
+	<ImageButton
+            style="@android:style/Widget.Button.Inset"
+            android:src="@drawable/bike_pics_logo"
+            android:id="@+id/m_bp_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginBottom="2dip"
+            android:padding="10dip"
+            android:layout_centerHorizontal="true"
+			android:layout_below="@id/m_rate"/>
+</RelativeLayout> </ScrollView>
